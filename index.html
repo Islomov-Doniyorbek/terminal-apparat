@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Terminal</title>
+</head>
+<body>
+    <div class="chooseCard">
+        <ul class="listCards">
+            <li><button>Karta tanlang:</button></li>
+            <li><button><input type="radio" name="card" value="kartav5"> AloqaBank Uzcard</button></li>
+            <li><button><input type="radio" name="card" value="kartav3"> Anorbank Humo</button></li>
+            <li><button><input type="radio" name="card" value="kartav2"> Anorbank MasterCard</button></li>
+            <li><button><input type="radio" name="card" value="kartav1"> Ipak yo'li Bank</button></li>
+            <li><button><input type="radio" name="card" value="kartav4"> Sanoat Qurilish Bank SQB</button></li>
+        </ul>
+        <button id="choose">Tanlash</button>
+    </div>
+    <div class="container">
+        <div class="terminal">
+            <div class="display">
+
+                <div class="nfc">
+                    <i class='bx bx-wifi'></i>
+                </div>
+                <div class="screen">
+                    <p class="commands">
+                        Karta ulandi! <br>
+                        Balansni ko'rish uchun (.) ni bosing!
+                    </p>
+                    <p class="pinkod">
+                        Pinkod: <span id="pinkod"></span>
+                    </p>
+                    <p class="summa">
+                        To'lov: &nbsp;<span id="sum">0.00</span>&nbsp; UZS                         
+                    </p>                    
+                    <p class="balans">
+                        Balans: &nbsp;<span id="balans">0.00</span>&nbsp; UZS                         
+                    </p>                    
+                    <p class="success">
+                        <span id="success">0.00</span>UZS mablag' yechildi!                      
+                    </p>                    
+                </div>
+            </div>
+            <div class="buttons">
+                    <div class="numbers">
+                        <button type="submit" value="1" class="btn">1</button>
+                        <button type="submit" value="2" class="btn">2</button>
+                        <button type="submit" value="3" class="btn">3</button>
+                        <button type="submit" value="4" class="btn">4</button>
+                        <button type="submit" value="5" class="btn">5</button>
+                        <button type="submit" value="6" class="btn">6</button>
+                        <button type="submit" value="7" class="btn">7</button>
+                        <button type="submit" value="8" class="btn">8</button>
+                        <button type="submit" value="9" class="btn">9</button>
+                        <button type="submit" class="btn payBtn">
+                            <i class='bx bx-money-withdraw'></i>
+                        </button>
+                        <button type="submit" value="0" class="btn">0</button>
+                        <button type="submit" value="." class="btn tochka">.</button>
+                    </div>
+                    <div class="controlBtns">
+                        <button type="submit" class="btn cancel" style="--i:darkred;">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <button type="submit" class="btn delete" style="--i:yellow;">
+                            <i class="fa fa-mail-forward"></i>
+                        </button>
+                        <button type="submit" class="btn enter" style="--i:green;">
+                            <i class="fa fa-circle-thin"></i>
+                        </button>
+                    </div>
+            </div>
+            <div class="inputPlace">
+                <div class="input"></div>
+            </div>
+        </div>
+        <div class="card">
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

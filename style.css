@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 10px;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 500px;
+    position: relative;
+}
+.container .terminal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #252535;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 14px solid #39395e;
+    border-bottom: 0;
+    padding: 10px 10px 0 10px;
+    z-index: 5;
+}
+.display {
+    width: 100%;
+    position: relative;
+}
+.display .nfc {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1.5px solid #000016;
+    box-shadow: inset 0 -2px 5px black;
+}
+.nfc i {
+    font-size: 36px;
+    color: #fff;
+    transform: rotate(90deg);
+}
+.display .screen {
+    width: 100%;
+    height: 150px;
+    background: wheat;
+    border-style: solid;
+    border-color: black;
+    margin-top: 10px;
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+}
+.screen .commands {
+    position: relative;
+    height: 100%;
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 15px;
+}
+.screen .pinkod {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    display: none;
+    padding-left: 15px;
+}
+.screen .summa {
+    position: relative;
+    display: flex;
+    display: none;
+    padding-left: 15px;
+    align-items: center;
+    height: 100%;
+}
+.screen p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.screen span {
+    font-weight: 800;
+}
+.screen .balans {
+    position: relative;
+    display: flex;
+    display: none;
+    padding-left: 15px;
+    align-items: center;
+    height: 100%;
+}
+.screen .success {
+    width: 100%;
+    position: relative;
+    display: flex;
+    display: none;
+    padding-left: 15px;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+    font-size: 14px;
+    flex-direction: column;
+}
+.buttons {
+    margin-top: 5px;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.buttons .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.numbers .btn, .controlBtns .btn {
+    border: 2px solid azure;
+    color: azure;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+}
+.buttons .controlBtns {
+    margin-top: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+.controlBtns .btn {
+    background: var(--i);
+    font-weight: 300;
+    color: #39395e;
+}
+.inputPlace {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.inputPlace .input {
+    width: 127px;
+    height: 3px;
+    background: #000;
+    margin-left: 37px;
+}
+/* 3212 2040 */
+/* 803 508 */
+/* 200.75  127 */
+
+.card {
+    height: 127px;
+    width: 200.75px;
+    background-image: url('./kartav5.jpg');
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg);
+    position: absolute;
+    border-radius: 10px;
+    bottom: -163.5px;
+}
+.card.active {
+    transition: 0.7s;
+    bottom: -63.5px;
+}
+.chooseCard {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    z-index: 6;
+    height: 400px;
+    padding: 10px;
+    background: #098619;
+    border-radius: 12px;
+}
+.chooseCard ul {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+ul li button {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: goldenrod;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: justify;
+    background: transparent;
+    border-bottom: 2px solid goldenrod;
+    border-left: 2px solid goldenrod;
+}
+ul input {
+    cursor: pointer;
+}
+.chooseCard #choose {
+    width: 50%;
+    position: relative;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: goldenrod;
+    border: none;
+    margin-top: 10px;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    background: transparent;
+    cursor: pointer;
+}
