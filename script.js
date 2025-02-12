@@ -32,6 +32,12 @@ card.addEventListener("click", () => {
         pinkod.style.display = "none";
         screen.style.display = "flex";
         summa.style.display = "none";
+        payBtn.onclick=() => {
+    pay()
+        }
+        tochka.onclick = () => {
+    balanss()
+        }
     }, 800)
 })
 
@@ -58,9 +64,6 @@ function command() {
             console.log(5);
         }
     })
-}
-payBtn.onclick=() => {
-    pay()
 }
 function pay() {
     success.style.display = "none";
@@ -103,9 +106,6 @@ function pay() {
 
 
 }
-tochka.addEventListener("click", () => {
-    balanss()
-})
 function balanss() {
         success.style.display = "none";
         ballans.style.display = "none";
